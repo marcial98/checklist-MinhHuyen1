@@ -167,6 +167,7 @@ document.body.insertBefore(dateInput, document.getElementById('checklist'));
   // Set default date to today
   const today = new Date().toISOString().split('T')[0];
   dateInput.value = today;
+  dateInput._flatpickr.setDate(today, true);
   dateInput.dispatchEvent(new Event('change'));
 </script>
 
